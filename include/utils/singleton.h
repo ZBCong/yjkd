@@ -1,6 +1,34 @@
 #pragma once
+#include <windows.h>
 
-#define SINGLETON_DECLARE(theClass) friend class y::Singleton<theClass>
+#define SINGLETON_TEMPLATE_DECLARE(theClass) friend class y::Singleton<theClass>
+#define SINGLETON_DECLARE(theClass,func)                \
+    public:                                             \
+    static theClass& func()                             \
+    {                                                   \
+        static theClass* s_ptr = 0;                     \
+        static volatile LONG s_lock = 0;                \
+        while (!s_ptr)                                  \
+        {                                               \
+            if (1 == ::InterlockedIncrement(&s_lock))   \
+                {                                       \
+                    s_ptr = _obj_creator();             \
+                    ::InterlockedDecrement(&s_lock);    \
+                }                                       \
+                else                                    \
+                {                                       \
+                    ::InterlockedDecrement(&s_lock);    \
+                    ::Sleep(10);                        \
+                }                                       \
+        }                                               \
+        return *s_ptr;                                  \
+    }                                                   \
+    static theClass* _obj_creator()                     \
+    {                                                   \
+        static theClass s_obj;                          \
+        return &s_obj;                                  \
+    }
+
 
 namespace y
 {
@@ -11,7 +39,7 @@ class Singleton
     typedef Singleton<T> _Myt;
 
 public:
-    static T& Instance()
+    static T& instance()
     {
         static T obj;
         m_oc.do_nothing();
@@ -23,7 +51,7 @@ private:
     {
         _obj_creator() 
         {
-            _Myt::Instance(); 
+            _Myt::instance(); 
         }
         inline void do_nothing() const {}
     };
