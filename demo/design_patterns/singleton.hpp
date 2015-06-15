@@ -31,3 +31,13 @@ private:
 public:
     void DoSomething() {}
 };
+
+class CSingletonClient
+{
+public:
+    static void main()
+    {
+        CLazyMan::Instance().DoSomething();
+        y::Singleton<CHungryMan>::instance().DoSomething();
+    }
+};

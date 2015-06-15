@@ -43,7 +43,7 @@ public:
     virtual ILightBase* Create() { return new CTubeLight(); }
 };
 
-class FactoryMethodClient
+class CFactoryMethodClient
 {
 public:
     static void main()

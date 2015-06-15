@@ -6,13 +6,12 @@
 
 TEST(DESIGN_PATTERNS, SINGLETON)
 {
-    CLazyMan::Instance().DoSomething();
-    y::Singleton<CHungryMan>::instance().DoSomething();
+    CSingletonClient::main();
 }
 
 TEST(DESIGN_PATTERNS, FACTORY_METHOD)
 {
-    FactoryMethodClient::main();
+    CFactoryMethodClient::main();
 }
 
 TEST(DESIGN_PATTERNS, FACADE)
@@ -22,5 +21,5 @@ TEST(DESIGN_PATTERNS, FACADE)
 
 TEST(DESIGN_PATTERNS, TEMPLATE_METHOD)
 {
-    TemplateMethodClient::main();
+    CTemplateMethodClient::main();
 }

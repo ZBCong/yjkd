@@ -33,7 +33,7 @@ public:
     virtual void PrimitiveOperation2() {}
 };
 
-class TemplateMethodClient
+class CTemplateMethodClient
 {
 public:
     static void main()
