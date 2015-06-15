@@ -2,10 +2,8 @@
 
 // 组合模式:
 
-#include <iostream>
 #include <list>
 #include <algorithm>
-#include <stdlib.h>
 
 // 操作接口
 class IComponent
