@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "singleton.hpp"
 #include "factory_method.hpp"
+#include "facade.hpp"
 
 TEST(DESIGN_PATTERNS, SINGLETON)
 {
@@ -11,4 +12,9 @@ TEST(DESIGN_PATTERNS, SINGLETON)
 TEST(DESIGN_PATTERNS, FACTORY_METHOD)
 {
     FactoryMethodClient::main();
+}
+
+TEST(DESIGN_PATTERNS, FACADE)
+{
+    CFacadeClient::main();
 }
