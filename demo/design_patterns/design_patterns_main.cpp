@@ -3,6 +3,7 @@
 #include "factory_method.hpp"
 #include "facade.hpp"
 #include "template_method.hpp"
+#include "abstract_factory.hpp"
 
 TEST(DESIGN_PATTERNS, SINGLETON)
 {
@@ -22,4 +23,9 @@ TEST(DESIGN_PATTERNS, FACADE)
 TEST(DESIGN_PATTERNS, TEMPLATE_METHOD)
 {
     CTemplateMethodClient::main();
+}
+
+TEST(DESIGN_PATTERNS, ABSTRACT_FACTORY)
+{
+    CAbstractFactoryClient::main();
 }
