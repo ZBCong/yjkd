@@ -6,6 +6,7 @@
 #include "abstract_factory.hpp"
 #include "proxy.hpp"
 #include "composite.hpp"
+#include "adapter.hpp"
 
 TEST(DESIGN_PATTERNS, SINGLETON)
 {
@@ -40,4 +41,9 @@ TEST(DESIGN_PATTERNS, PROXY)
 TEST(DESIGN_PATTERNS, COMPOSITE)
 {
     CCompositeClient::main();
+}
+
+TEST(DESIGN_PATTERNS, ADAPTOR)
+{
+    CAdapterClient::main();
 }
