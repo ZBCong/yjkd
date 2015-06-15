@@ -4,6 +4,7 @@
 #include "facade.hpp"
 #include "template_method.hpp"
 #include "abstract_factory.hpp"
+#include "proxy.hpp"
 
 TEST(DESIGN_PATTERNS, SINGLETON)
 {
@@ -28,4 +29,9 @@ TEST(DESIGN_PATTERNS, TEMPLATE_METHOD)
 TEST(DESIGN_PATTERNS, ABSTRACT_FACTORY)
 {
     CAbstractFactoryClient::main();
+}
+
+TEST(DESIGN_PATTERNS, PROXY)
+{
+    CProxyClient::main();
 }

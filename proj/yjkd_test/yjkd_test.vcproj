@@ -254,6 +254,10 @@
 					>
 				</File>
 				<File
+					RelativePath="..\..\demo\design_patterns\proxy.hpp"
+					>
+				</File>
+				<File
 					RelativePath="..\..\demo\design_patterns\singleton.hpp"
 					>
 				</File>
