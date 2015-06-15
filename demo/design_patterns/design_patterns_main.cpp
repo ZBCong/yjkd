@@ -3,5 +3,6 @@
 
 TEST(DESIGN_PATTERNS, SINGLETON)
 {
-    CSingletonTest::Instance().DoSomething();
+    CLazyMan::Instance().DoSomething();
+    y::Singleton<CHungryMan>::instance().DoSomething();
 }
