@@ -2,6 +2,7 @@
 #include "singleton.hpp"
 #include "factory_method.hpp"
 #include "facade.hpp"
+#include "template_method.hpp"
 
 TEST(DESIGN_PATTERNS, SINGLETON)
 {
@@ -17,4 +18,9 @@ TEST(DESIGN_PATTERNS, FACTORY_METHOD)
 TEST(DESIGN_PATTERNS, FACADE)
 {
     CFacadeClient::main();
+}
+
+TEST(DESIGN_PATTERNS, TEMPLATE_METHOD)
+{
+    TemplateMethodClient::main();
 }
