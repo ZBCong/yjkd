@@ -5,6 +5,7 @@
 #include "template_method.hpp"
 #include "abstract_factory.hpp"
 #include "proxy.hpp"
+#include "composite.hpp"
 
 TEST(DESIGN_PATTERNS, SINGLETON)
 {
@@ -34,4 +35,9 @@ TEST(DESIGN_PATTERNS, ABSTRACT_FACTORY)
 TEST(DESIGN_PATTERNS, PROXY)
 {
     CProxyClient::main();
+}
+
+TEST(DESIGN_PATTERNS, COMPOSITE)
+{
+    CCompositeClient::main();
 }

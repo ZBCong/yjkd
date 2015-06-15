@@ -242,6 +242,10 @@
 					>
 				</File>
 				<File
+					RelativePath="..\..\demo\design_patterns\composite.hpp"
+					>
+				</File>
+				<File
 					RelativePath="..\..\demo\design_patterns\design_patterns_main.cpp"
 					>
 				</File>
