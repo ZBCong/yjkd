@@ -16,7 +16,7 @@
 interface ICommand
 {
     virtual ~ICommand() {};
-    virtual void Execute()=0;
+    virtual void Execute() = 0;
 };
 
 // 知道如何实施与执行一个与请求相关的操作，任何类都可能作为一个接收者。
