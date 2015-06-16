@@ -57,6 +57,7 @@ public:
         _ComonentListType::iterator it = std::find(m_components.begin(), m_components.end(), pChild);
         if (m_components.end() != it)
         {
+            delete (*it);
             m_components.erase(it);
         }
     }
@@ -65,7 +66,7 @@ public:
     {
         int i = 0;
         _ComonentListType::iterator it;
-        for (it=m_components.begin();it!=m_components.end();++it)
+        for (it=m_components.begin(); it!=m_components.end(); ++it)
         {
             if (i == nIndex)
             {
@@ -91,7 +92,7 @@ public:
         pComposite->Add(pLeaf2);
         pComposite->Operation();
         pComposite->Remove(pLeaf1);
-        pComposite->GetChild(1)->Operation();
+        pComposite->GetChild(0)->Operation();
 
         delete pComposite;
     }
