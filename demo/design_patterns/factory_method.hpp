@@ -6,6 +6,7 @@
 
 interface ILightBase
 {
+    virtual ~ILightBase() {}
     virtual void TurnOn()  = 0;
     virtual void TurnOff() = 0;
 };
@@ -26,6 +27,7 @@ public:
 
 interface ICreatorBase
 {
+    virtual ~ICreatorBase() {}
     virtual ILightBase* Create() = 0;
 };
 

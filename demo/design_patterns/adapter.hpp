@@ -6,7 +6,8 @@
 
 // 目标抽象接口
 interface Target  
-{  
+{
+    virtual ~Target() {}
     virtual void method1() = 0;
 };
 

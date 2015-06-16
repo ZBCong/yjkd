@@ -10,8 +10,8 @@
 interface IPrototype
 {
 public:
-    virtual IPrototype* Clone() const = 0;
     virtual ~IPrototype() {};
+    virtual IPrototype* Clone() const = 0;
 };
 
 class ConcretePrototype1 : public IPrototype

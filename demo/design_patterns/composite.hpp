@@ -6,9 +6,9 @@
 #include <algorithm>
 
 // ²Ù×÷½Ó¿Ú
-class IComponent
+interface IComponent
 {
-public:
+    virtual ~IComponent() {}
     virtual void Operation() = 0;
     virtual void Add(IComponent* pChild) {}
     virtual void Remove(IComponent* pChild) {}

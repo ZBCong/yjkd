@@ -6,27 +6,27 @@
 // 而逻辑的组成步骤在相应的抽象操作中,推迟到之类实现.
 // 顶层逻辑也有可能调用一些具体方法.
 
-class AbstractClass
+interface IAbstractClass
 {
-public:
+    virtual ~IAbstractClass() {}
+    virtual void PrimitiveOperation1() = 0;
+    virtual void PrimitiveOperation2() = 0;
+
     void TemplateMethod()
     {
         this->PrimitiveOperation1();
         this->PrimitiveOperation2();
     }
-
-    virtual void PrimitiveOperation1() = 0;
-    virtual void PrimitiveOperation2() = 0;
 };
 
-class ConcreteClassA : public AbstractClass
+class ConcreteClassA : public IAbstractClass
 {
 public:
     virtual void PrimitiveOperation1() {}
     virtual void PrimitiveOperation2() {}
 };
 
-class ConcreteClassB : public AbstractClass
+class ConcreteClassB : public IAbstractClass
 {
 public:
     virtual void PrimitiveOperation1() {}
@@ -39,7 +39,7 @@ public:
     static void main()
     {
         //ConcreteClassA与ConcreteClassB可相互替换
-        AbstractClass* pAbstract = new ConcreteClassA();
+        IAbstractClass* pAbstract = new ConcreteClassA();
         pAbstract->TemplateMethod();
         delete pAbstract;
 

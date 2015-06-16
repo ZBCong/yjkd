@@ -9,15 +9,19 @@
 // 大苹果表,由表带和表核心2个大件组成
 
 interface IWatchBand
-{};
+{
+    virtual ~IWatchBand() {}
+};
 
 interface IWatchCore
 {
+    virtual ~IWatchCore() {}
     virtual void Bind(IWatchBand* a) = 0;
 };
 
 interface IWatchFactory
 {
+    virtual ~IWatchFactory() {}
     virtual IWatchBand* CreateWatchBand() = 0;
     virtual IWatchCore* CreateWatchCore() = 0;
 };
