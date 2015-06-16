@@ -8,6 +8,7 @@
 #include "composite.hpp"
 #include "adapter.hpp"
 #include "prototype.hpp"
+#include "command.hpp"
 
 TEST(DESIGN_PATTERNS, SINGLETON)
 {
@@ -52,4 +53,9 @@ TEST(DESIGN_PATTERNS, ADAPTOR)
 TEST(DESIGN_PATTERNS, PROTOTYPE)
 {
     CPrototypeClient::main();
+}
+
+TEST(DESIGN_PATTERNS, COMMAND)
+{
+    CCommandClient::main();
 }

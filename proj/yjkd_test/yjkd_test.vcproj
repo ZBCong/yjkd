@@ -246,6 +246,10 @@
 					>
 				</File>
 				<File
+					RelativePath="..\..\demo\design_patterns\command.hpp"
+					>
+				</File>
+				<File
 					RelativePath="..\..\demo\design_patterns\composite.hpp"
 					>
 				</File>
