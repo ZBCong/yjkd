@@ -17,18 +17,12 @@ public:
 class ConcretePrototype1 : public IPrototype
 {
 public:
-    ConcretePrototype1()  {}
-    ~ConcretePrototype1() {}
-    ConcretePrototype1(const ConcretePrototype1&) {}
     virtual IPrototype* Clone() const { return new ConcretePrototype1(*this); }
 };
 
 class ConcretePrototype2:public IPrototype
 {
 public:
-    ConcretePrototype2()  {}
-    ~ConcretePrototype2() {}
-    ConcretePrototype2(const ConcretePrototype2&) {}
     virtual IPrototype* Clone() const { return new ConcretePrototype2(*this); }
 };
 
