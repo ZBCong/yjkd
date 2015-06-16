@@ -286,6 +286,10 @@
 					>
 				</File>
 				<File
+					RelativePath="..\..\demo\design_patterns\strategy.hpp"
+					>
+				</File>
+				<File
 					RelativePath="..\..\demo\design_patterns\template_method.hpp"
 					>
 				</File>

@@ -10,6 +10,7 @@
 #include "prototype.hpp"
 #include "command.hpp"
 #include "observer.hpp"
+#include "strategy.hpp"
 
 TEST(DESIGN_PATTERNS, SINGLETON)
 {
@@ -64,4 +65,9 @@ TEST(DESIGN_PATTERNS, COMMAND)
 TEST(DESIGN_PATTERNS, OBSERVER)
 {
     CObserverClient::main();
+}
+
+TEST(DESIGN_PATTERNS, STRATEGY)
+{
+    CStrategyClient::main();
 }
