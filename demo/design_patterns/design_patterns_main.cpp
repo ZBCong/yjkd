@@ -9,6 +9,7 @@
 #include "adapter.hpp"
 #include "prototype.hpp"
 #include "command.hpp"
+#include "observer.hpp"
 
 TEST(DESIGN_PATTERNS, SINGLETON)
 {
@@ -58,4 +59,9 @@ TEST(DESIGN_PATTERNS, PROTOTYPE)
 TEST(DESIGN_PATTERNS, COMMAND)
 {
     CCommandClient::main();
+}
+
+TEST(DESIGN_PATTERNS, OBSERVER)
+{
+    CObserverClient::main();
 }
