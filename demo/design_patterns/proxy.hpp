@@ -1,8 +1,6 @@
 #pragma once
 
-#ifndef interface
-#define interface
-#endif // interface
+#include "design_patterns_def.h"
 
 // 代理模式: 在客户程序和目标对象之间增加一层中间层，让代理对象来代替目标对象打点一切
 

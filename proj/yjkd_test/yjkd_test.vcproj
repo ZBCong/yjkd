@@ -250,6 +250,10 @@
 					>
 				</File>
 				<File
+					RelativePath="..\..\demo\design_patterns\design_patterns_def.h"
+					>
+				</File>
+				<File
 					RelativePath="..\..\demo\design_patterns\design_patterns_main.cpp"
 					>
 				</File>

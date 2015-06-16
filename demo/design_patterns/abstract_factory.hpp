@@ -1,8 +1,6 @@
 #pragma once
 
-#ifndef interface
-#define interface
-#endif // interface
+#include "design_patterns_def.h"
 
 // ³éÏó¹¤³§
 

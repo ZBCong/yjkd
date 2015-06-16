@@ -1,8 +1,6 @@
 #pragma once
 
-#ifndef interface
-#define interface struct
-#endif // interface
+#include "design_patterns_def.h"
 
 // 工厂模式,对象创建型模式.使对象的创建工作延迟到子类
 
