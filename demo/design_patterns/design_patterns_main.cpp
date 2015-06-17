@@ -15,6 +15,7 @@
 #include "builder.hpp"
 #include "bridge.hpp"
 #include "decorator.hpp"
+#include "mediator.hpp"
 
 TEST(DESIGN_PATTERNS, SINGLETON)
 {
@@ -96,3 +97,7 @@ TEST(DESIGN_PATTERNS, DECORATOR)
     CDecoratorClient::main();
 }
 
+TEST(DESIGN_PATTERNS, MEDIATOR)
+{
+    CMediatorClient::main();
+}

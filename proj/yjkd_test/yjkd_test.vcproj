@@ -286,6 +286,10 @@
 					>
 				</File>
 				<File
+					RelativePath="..\..\demo\design_patterns\mediator.hpp"
+					>
+				</File>
+				<File
 					RelativePath="..\..\demo\design_patterns\observer.hpp"
 					>
 				</File>
