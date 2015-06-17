@@ -11,6 +11,7 @@
 #include "command.hpp"
 #include "observer.hpp"
 #include "strategy.hpp"
+#include "iterator.hpp"
 
 TEST(DESIGN_PATTERNS, SINGLETON)
 {
@@ -70,4 +71,9 @@ TEST(DESIGN_PATTERNS, OBSERVER)
 TEST(DESIGN_PATTERNS, STRATEGY)
 {
     CStrategyClient::main();
+}
+
+TEST(DESIGN_PATTERNS, ITERATOR)
+{
+    CIteratorClient::main();
 }

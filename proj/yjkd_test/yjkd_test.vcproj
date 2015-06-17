@@ -270,6 +270,10 @@
 					>
 				</File>
 				<File
+					RelativePath="..\..\demo\design_patterns\iterator.hpp"
+					>
+				</File>
+				<File
 					RelativePath="..\..\demo\design_patterns\observer.hpp"
 					>
 				</File>
