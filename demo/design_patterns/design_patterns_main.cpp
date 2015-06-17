@@ -12,6 +12,7 @@
 #include "observer.hpp"
 #include "strategy.hpp"
 #include "iterator.hpp"
+#include "builder.hpp"
 
 TEST(DESIGN_PATTERNS, SINGLETON)
 {
@@ -77,3 +78,9 @@ TEST(DESIGN_PATTERNS, ITERATOR)
 {
     CIteratorClient::main();
 }
+
+TEST(DESIGN_PATTERNS, BUILDER)
+{
+    CBuilderClient::main();
+}
+
