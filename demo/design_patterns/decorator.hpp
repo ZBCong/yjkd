@@ -98,12 +98,12 @@ class CDecoratorClient
 public:
     static void main()
     {
-        ITarget* pTarget1 = new CTarget();                   // 被装饰的目标对象
+        ITarget* pTarget1 = new CTarget();                              // 被装饰的目标对象
         IDecorator* pDecorator = NULL;
-        IDecorator* pDecoratorA = new CConcreteDecoratorA(pTarget1);            //给装饰对象附加职责A
-        IDecorator* pDecoratorB = new CConcreteDecoratorB(pDecoratorA);            //给装饰对象附加职责B
-        IDecorator* pDecoratorC = new CConcreteDecoratorC(pDecoratorB);            //给装饰对象附加职责C
-        IDecorator* pDecoratorD = new CConcreteDecoratorD(pDecoratorC);            //给装饰对象附加职责D
+        IDecorator* pDecoratorA = new CConcreteDecoratorA(pTarget1);    //给装饰对象附加职责A
+        IDecorator* pDecoratorB = new CConcreteDecoratorB(pDecoratorA); //给装饰对象附加职责B
+        IDecorator* pDecoratorC = new CConcreteDecoratorC(pDecoratorB); //给装饰对象附加职责C
+        IDecorator* pDecoratorD = new CConcreteDecoratorD(pDecoratorC); //给装饰对象附加职责D
         pDecoratorD->Operation();
         delete pDecoratorD;
 
