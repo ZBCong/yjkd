@@ -13,6 +13,7 @@
 #include "strategy.hpp"
 #include "iterator.hpp"
 #include "builder.hpp"
+#include "bridge.hpp"
 
 TEST(DESIGN_PATTERNS, SINGLETON)
 {
@@ -82,5 +83,10 @@ TEST(DESIGN_PATTERNS, ITERATOR)
 TEST(DESIGN_PATTERNS, BUILDER)
 {
     CBuilderClient::main();
+}
+
+TEST(DESIGN_PATTERNS, BRIDGE)
+{
+    CBridgeClient::main();
 }
 
