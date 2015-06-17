@@ -262,6 +262,10 @@
 					>
 				</File>
 				<File
+					RelativePath="..\..\demo\design_patterns\decorator.hpp"
+					>
+				</File>
+				<File
 					RelativePath="..\..\demo\design_patterns\design_patterns_def.h"
 					>
 				</File>

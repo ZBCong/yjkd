@@ -14,6 +14,7 @@
 #include "iterator.hpp"
 #include "builder.hpp"
 #include "bridge.hpp"
+#include "decorator.hpp"
 
 TEST(DESIGN_PATTERNS, SINGLETON)
 {
@@ -88,5 +89,10 @@ TEST(DESIGN_PATTERNS, BUILDER)
 TEST(DESIGN_PATTERNS, BRIDGE)
 {
     CBridgeClient::main();
+}
+
+TEST(DESIGN_PATTERNS, DECORATOR)
+{
+    CDecoratorClient::main();
 }
 
