@@ -1,5 +1,4 @@
 #pragma once
-
 #include "design_patterns_def.h"
 
 // Prototype模式提供了一个通过已存在对象进行新对象创建的接口（Clone）

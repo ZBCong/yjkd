@@ -1,4 +1,6 @@
 #pragma once
+#include "design_patterns_def.h"
+#include <vector>
 
 /**
  * 理解桥接模式，重点需要理解如何将抽象化(Abstraction)与实现化(Implementation)脱耦，使得二者可以独立地变化。

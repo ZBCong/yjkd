@@ -1,7 +1,7 @@
 #pragma once
+#include "design_patterns_def.h"
 
 // ²ßÂÔÄ£Ê½: 
-
 
 interface IStrategy
 {

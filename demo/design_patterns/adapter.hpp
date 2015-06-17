@@ -1,5 +1,4 @@
 #pragma once
-
 #include "design_patterns_def.h"
 
 // 适配器模式:将一个类的接口转换成客户希望的另外一个接口

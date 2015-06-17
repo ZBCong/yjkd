@@ -1,5 +1,4 @@
 #pragma once
-
 #include "design_patterns_def.h"
 
 // ³éÏó¹¤³§

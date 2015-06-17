@@ -1,9 +1,9 @@
 #pragma once
-
-// 组合模式:
-
+#include "design_patterns_def.h"
 #include <list>
 #include <algorithm>
+
+// 组合模式:
 
 // 操作接口
 interface IComponent

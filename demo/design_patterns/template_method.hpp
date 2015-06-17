@@ -1,4 +1,5 @@
 #pragma once
+#include "design_patterns_def.h"
 
 // 模板方法模式
 // 抽象模板,定义并实现了一个模板方法.
