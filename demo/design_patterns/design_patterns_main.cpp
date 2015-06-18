@@ -16,6 +16,7 @@
 #include "bridge.hpp"
 #include "decorator.hpp"
 #include "mediator.hpp"
+#include "memento.hpp"
 
 TEST(DESIGN_PATTERNS, SINGLETON)
 {
@@ -100,4 +101,9 @@ TEST(DESIGN_PATTERNS, DECORATOR)
 TEST(DESIGN_PATTERNS, MEDIATOR)
 {
     CMediatorClient::main();
+}
+
+TEST(DESIGN_PATTERNS, MEMENTO)
+{
+    CMementoClient::main();
 }
