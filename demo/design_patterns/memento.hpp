@@ -38,7 +38,13 @@ public:
     }
 
     CMemento* CreateMemento() { return new CMemento(m_nScore, m_nLevel); }
-    void RestoreFromMemento(const CMemento* rhs) { Set(rhs->m_nScore, rhs->m_nLevel); }
+    void RestoreFromMemento(const CMemento* pMemento)
+    {
+        if (pMemento)
+        {
+            Set(pMemento->m_nScore, pMemento->m_nLevel);
+        }
+    }
 
 private:
     int m_nScore;
