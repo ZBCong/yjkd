@@ -282,6 +282,10 @@
 					>
 				</File>
 				<File
+					RelativePath="..\..\demo\design_patterns\flyweight.hpp"
+					>
+				</File>
+				<File
 					RelativePath="..\..\demo\design_patterns\iterator.hpp"
 					>
 				</File>

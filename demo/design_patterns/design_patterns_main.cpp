@@ -18,6 +18,7 @@
 #include "mediator.hpp"
 #include "memento.hpp"
 #include "state.h"
+#include "flyweight.hpp"
 
 TEST(DESIGN_PATTERNS, SINGLETON)
 {
@@ -114,3 +115,7 @@ TEST(DESIGN_PATTERNS, STATE)
     CStateClient::main();
 }
 
+TEST(DESIGN_PATTERNS, FLYWEIGHT)
+{
+    CFlyWeightClient::main();
+}
