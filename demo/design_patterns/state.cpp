@@ -32,12 +32,18 @@ void CDoor::SetState( IDoorState* pDoorState )
 
 void CDoor::Open()
 {
-    m_pDoorState->Open(this);
+    if (m_pDoorState)
+    {
+        m_pDoorState->Open(this);
+    }
 }
 
 void CDoor::Close()
 {
-    m_pDoorState->Close(this);
+    if (m_pDoorState)
+    {
+        m_pDoorState->Close(this);
+    }
 }
 
 void CDoor::_ReleaseCurrentState()
