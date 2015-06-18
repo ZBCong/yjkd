@@ -17,6 +17,7 @@
 #include "decorator.hpp"
 #include "mediator.hpp"
 #include "memento.hpp"
+#include "state.h"
 
 TEST(DESIGN_PATTERNS, SINGLETON)
 {
@@ -107,3 +108,9 @@ TEST(DESIGN_PATTERNS, MEMENTO)
 {
     CMementoClient::main();
 }
+
+TEST(DESIGN_PATTERNS, STATE)
+{
+    CStateClient::main();
+}
+

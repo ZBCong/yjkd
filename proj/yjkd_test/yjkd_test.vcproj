@@ -310,6 +310,22 @@
 					>
 				</File>
 				<File
+					RelativePath="..\..\demo\design_patterns\state.cpp"
+					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							UsePrecompiledHeader="0"
+						/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="..\..\demo\design_patterns\state.h"
+					>
+				</File>
+				<File
 					RelativePath="..\..\demo\design_patterns\strategy.hpp"
 					>
 				</File>
