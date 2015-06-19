@@ -20,6 +20,7 @@
 #include "state.h"
 #include "flyweight.hpp"
 #include "visitor.hpp"
+#include "interpreter.hpp"
 
 TEST(DESIGN_PATTERNS, SINGLETON)
 {
@@ -124,4 +125,9 @@ TEST(DESIGN_PATTERNS, FLYWEIGHT)
 TEST(DESIGN_PATTERNS, VISITOR)
 {
     CVisitorClient::main();
+}
+
+TEST(DESIGN_PATTERNS, INTERPRETER)
+{
+    CInterpreterClient::main();
 }

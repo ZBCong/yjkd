@@ -286,6 +286,10 @@
 					>
 				</File>
 				<File
+					RelativePath="..\..\demo\design_patterns\interpreter.hpp"
+					>
+				</File>
+				<File
 					RelativePath="..\..\demo\design_patterns\iterator.hpp"
 					>
 				</File>
