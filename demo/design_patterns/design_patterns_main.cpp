@@ -19,6 +19,7 @@
 #include "memento.hpp"
 #include "state.h"
 #include "flyweight.hpp"
+#include "visitor.hpp"
 
 TEST(DESIGN_PATTERNS, SINGLETON)
 {
@@ -118,4 +119,9 @@ TEST(DESIGN_PATTERNS, STATE)
 TEST(DESIGN_PATTERNS, FLYWEIGHT)
 {
     CFlyWeightClient::main();
+}
+
+TEST(DESIGN_PATTERNS, VISITOR)
+{
+    CVisitorClient::main();
 }
