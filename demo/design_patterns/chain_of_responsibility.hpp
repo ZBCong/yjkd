@@ -5,10 +5,6 @@
 // 2. The "chain" method in the base class always delegates to the next object
 // 3. If the derived classes cannot handle, they delegate to the base class
 
-
-#include <vector>
-#include <ctime>
-
 class CHandlerBase
 {
 public:
