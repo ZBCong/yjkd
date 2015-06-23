@@ -21,6 +21,7 @@
 #include "flyweight.hpp"
 #include "visitor.hpp"
 #include "interpreter.hpp"
+#include "chain_of_responsibility.hpp"
 
 TEST(DESIGN_PATTERNS, SINGLETON)
 {
@@ -130,4 +131,9 @@ TEST(DESIGN_PATTERNS, VISITOR)
 TEST(DESIGN_PATTERNS, INTERPRETER)
 {
     CInterpreterClient::main();
+}
+
+TEST(DESIGN_PATTERNS, CHAIN_OF_RESPONSIBILITY)
+{
+    CChainOfResponsibilityClient::main();
 }

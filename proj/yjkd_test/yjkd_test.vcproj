@@ -254,6 +254,10 @@
 					>
 				</File>
 				<File
+					RelativePath="..\..\demo\design_patterns\chain_of_responsibility.hpp"
+					>
+				</File>
+				<File
 					RelativePath="..\..\demo\design_patterns\command.hpp"
 					>
 				</File>
