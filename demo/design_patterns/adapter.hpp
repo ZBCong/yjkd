@@ -14,17 +14,12 @@ interface Target
 class Adaptee
 {
 public:
-    void method2()
-    {
-    }
+    void method2() {}
 };
 
 // Åä½ÓÆ÷
 class Adapter : public Target
-{  
-private:
-    Adaptee* m_pAdaptee;
-
+{
 public:
     Adapter(Adaptee* pAdaptee) : m_pAdaptee(pAdaptee)
     {}
@@ -32,6 +27,9 @@ public:
 
     void method1()
     { m_pAdaptee->method2(); }
+
+private:
+    Adaptee* m_pAdaptee;
 };
 
 class CAdapterClient

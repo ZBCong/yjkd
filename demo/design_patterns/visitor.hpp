@@ -91,9 +91,8 @@ class CSalaryVisitor : public IVisitor
 public:
     CSalaryVisitor() : m_nSalarySum(0) {}
     virtual void Visit(const CEmployee& employee) { m_nSalarySum += employee.GetSalary(); }
-    virtual void Visit(const CBoss& boss) { m_nSalarySum += boss.GetSalary(); }
-
-    int GetSalarySum() const { return m_nSalarySum; }
+    virtual void Visit(const CBoss& boss)         { m_nSalarySum += boss.GetSalary(); }
+    int GetSalarySum() const                      { return m_nSalarySum; }
 
 private:
     int m_nSalarySum;
@@ -104,9 +103,8 @@ class CVacationVisitor : public IVisitor
 public:
     CVacationVisitor() : m_nVacationSum(0) {}
     virtual void Visit(const CEmployee& employee) { m_nVacationSum += employee.GetVacationDays(); }
-    virtual void Visit(const CBoss& boss) { m_nVacationSum += boss.GetVacationDays(); }
-
-    int GetVacationSum() const { return m_nVacationSum; }
+    virtual void Visit(const CBoss& boss)         { m_nVacationSum += boss.GetVacationDays(); }
+    int GetVacationSum() const                    { return m_nVacationSum; }
 
 private:
     int m_nVacationSum;

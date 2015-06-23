@@ -9,20 +9,27 @@ class CHandlerBase
 {
 public:
     CHandlerBase() : m_pNext(0) {}
-    virtual ~CHandlerBase()  {}
+    virtual ~CHandlerBase()     {}
 
     void Append(CHandlerBase *p)
     {
         if (m_pNext)
+        {
             m_pNext->Append(p);
+        }
         else
+        {
             m_pNext = p;
+        }
     }
 
     // 2. The "chain" method in the base class always delegates to the next obj
     virtual void Handle(int i)
     {
-        m_pNext->Handle(i);
+        if (m_pNext)
+        {
+            m_pNext->Handle(i);
+        }
     }
 
 private:

@@ -80,11 +80,11 @@ public:
     static void main()
     {
         IWatchFactory* pFactory1 = new CFactoryOfAppleWatchVer_1_0();
-        CCommonWorkFlow*   pEnv1     = new CCommonWorkFlow(pFactory1);
+        CCommonWorkFlow*   pEnv1 = new CCommonWorkFlow(pFactory1);
         pEnv1->Run();
 
         IWatchFactory* pFactory2 = new CFactoryOfAppleWatchVer_2_0();
-        CCommonWorkFlow*   pEnv2     = new CCommonWorkFlow(pFactory2);
+        CCommonWorkFlow*   pEnv2 = new CCommonWorkFlow(pFactory2);
         pEnv2->Run();
 
         delete pEnv1;
