@@ -36,7 +36,7 @@ class D2 : public B1, public B2, public B3
 {
 public:
     virtual int d1() { return 1000; }
-    virtual int f2() { return 666; }
+    virtual int f2() { return 666;  } // 覆盖了父类的f2
 };
 
 } // end of namespace micc
@@ -111,9 +111,9 @@ private:
         PFun pB1F1 = (PFun)(*pAddrOfVtblInB1);
         PFun pB1F2 = (PFun)*(pAddrOfVtblInB1 + 1);
         PFun pB1F3 = (PFun)*(pAddrOfVtblInB1 + 2);
-        ASSERT_EQ(1, pB1F1()); // B1::f1()
+        ASSERT_EQ(1, pB1F1());   // B1::f1()
         ASSERT_EQ(666, pB1F2()); // D2::f2()
-        ASSERT_EQ(3, pB1F3()); // B1::f3()
+        ASSERT_EQ(3, pB1F3());   // B1::f3()
 
         // 调用自身d1函数
         PFun pD1D1 = (PFun)*(pAddrOfVtblInB1 + 3);
@@ -123,9 +123,9 @@ private:
         PFun pB2F1 = (PFun)(*pAddrOfVtblInB2);
         PFun pB2F2 = (PFun)*(pAddrOfVtblInB2 + 1);
         PFun pB2F3 = (PFun)*(pAddrOfVtblInB2 + 2);
-        ASSERT_EQ(10, pB2F1()); // B2::f1()
+        ASSERT_EQ(10, pB2F1());  // B2::f1()
         ASSERT_EQ(666, pB2F2()); // D2::f2()
-        ASSERT_EQ(30, pB2F3()); // B2::f3()
+        ASSERT_EQ(30, pB2F3());  // B2::f3()
 
         // 调用基类B3的函数
         PFun pB3F1 = (PFun)(*pAddrOfVtblInB3);
