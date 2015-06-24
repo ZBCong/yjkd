@@ -9,3 +9,9 @@
 
 ## 单继承但有覆盖情况的子类结构
 ![child_class_with_override](https://raw.githubusercontent.com/siren186/yjkd/master/demo/polymorphism/doc/003_%E5%8D%95%E7%BB%A7%E6%89%BF_%E6%9C%89%E8%A6%86%E7%9B%96.png)
+
+## 多重继承但无覆盖的子类结构
+![child_class_with_override](https://raw.githubusercontent.com/siren186/yjkd/master/demo/polymorphism/doc/004_%E5%A4%9A%E9%87%8D%E7%BB%A7%E6%89%BF_%E6%97%A0%E8%A6%86%E7%9B%96.png)
+
+## 多重继承但有覆盖的子类结构
+![child_class_with_override](https://raw.githubusercontent.com/siren186/yjkd/master/demo/polymorphism/doc/005_%E5%A4%9A%E9%87%8D%E7%BB%A7%E6%89%BF_%E6%9C%89%E8%A6%86%E7%9B%96.png)
