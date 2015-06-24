@@ -354,15 +354,15 @@
 				Name="polymorphism"
 				>
 				<File
-					RelativePath="..\..\demo\polymorphism\child_class.h"
-					>
-				</File>
-				<File
 					RelativePath="..\..\demo\polymorphism\empty_class.h"
 					>
 				</File>
 				<File
 					RelativePath="..\..\demo\polymorphism\polymorphism_main.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\demo\polymorphism\single_inheritance_child_class.h"
 					>
 				</File>
 				<File
