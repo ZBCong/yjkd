@@ -354,6 +354,10 @@
 				Name="polymorphism"
 				>
 				<File
+					RelativePath="..\..\demo\polymorphism\child_class.h"
+					>
+				</File>
+				<File
 					RelativePath="..\..\demo\polymorphism\empty_class.h"
 					>
 				</File>

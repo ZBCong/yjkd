@@ -16,3 +16,14 @@ public:
     virtual void vf4() = 0;
     void f() {}
 };
+
+
+class CEmptyClassClient
+{
+public:
+    static void main()
+    {
+        ASSERT_EQ(1, sizeof(CEmptyClassWithoutVirtualFunc)); // 空类大小为1
+        ASSERT_EQ(4, sizeof(CEmptyClassWithVirtualFunc));    // 虚类大小为4
+    }
+};
