@@ -350,6 +350,22 @@
 					>
 				</File>
 			</Filter>
+			<Filter
+				Name="polymorphism"
+				>
+				<File
+					RelativePath="..\..\demo\polymorphism\empty_class.h"
+					>
+				</File>
+				<File
+					RelativePath="..\..\demo\polymorphism\polymorphism_main.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\demo\polymorphism\virtual_base_class.h"
+					>
+				</File>
+			</Filter>
 		</Filter>
 	</Files>
 	<Globals>
