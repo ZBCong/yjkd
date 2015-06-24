@@ -35,11 +35,11 @@ public:
 class D2 : public B1, public B2, public B3
 {
 public:
+    virtual int d1() { return 1000; }
     virtual int f2() { return 666; }
 };
 
 } // end of namespace micc
-
 
 
 class CMultiInheritanceChildClass
@@ -114,6 +114,10 @@ private:
         ASSERT_EQ(1, pB1F1()); // B1::f1()
         ASSERT_EQ(666, pB1F2()); // D2::f2()
         ASSERT_EQ(3, pB1F3()); // B1::f3()
+
+        // 调用自身d1函数
+        PFun pD1D1 = (PFun)*(pAddrOfVtblInB1 + 3);
+        ASSERT_EQ(1000, pD1D1()); // D1::d1()
 
         // 调用基类B2的函数
         PFun pB2F1 = (PFun)(*pAddrOfVtblInB2);
