@@ -358,6 +358,10 @@
 					>
 				</File>
 				<File
+					RelativePath="..\..\demo\polymorphism\multi_inheritance_child_class.h"
+					>
+				</File>
+				<File
 					RelativePath="..\..\demo\polymorphism\polymorphism_main.cpp"
 					>
 				</File>
