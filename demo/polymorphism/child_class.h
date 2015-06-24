@@ -14,7 +14,6 @@ private:
     int m_c2;
 };
 
-
 class CChildClassClient
 {
 public:
