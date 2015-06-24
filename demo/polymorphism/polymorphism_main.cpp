@@ -16,18 +16,23 @@ TEST(POLYMORPHISM, EMPTY_CLASS)
 TEST(POLYMORPHISM, BASE_VIRTUAL_CLASS)
 {
     CBase b;
-    int* pAddrOfB = (int*)(&b); // 取对象的地址
-    int* pContentOfB = (int*)(*pAddrOfB); // 取对象的地址所指向的内容
-    int* pAddrOfFirstVitualFuncInB = pContentOfB; // 对象地址所指向内容,实际为虚函数表的首地址
+    int* pAddrOfB = (int*)(&b); // 取对象的首地址
+
+    int* pAddrOfFirstVitualFuncInB = (int*)(*pAddrOfB); // 对象首地址    -> 虚函数表
+    int* pMember1 = (int*)(pAddrOfB+1);                 // 对象首地址加1 -> 成员1
+    int* pMember2 = (int*)(pAddrOfB+2);                 // 对象首地址加2 -> 成员2
+
+    ASSERT_EQ(100, *pMember1);
+    ASSERT_EQ(200, *pMember2);
 
     typedef int (*PFun)();
 
-    PFun pFun1 = (PFun)(*pAddrOfFirstVitualFuncInB); // 取虚函数表的首地址所指内容,取第一个虚函数地址
-    ASSERT_EQ(10, pFun1()); // 调用第一个虚函数CBase::f1()
+    PFun pFun1 = (PFun)(*pAddrOfFirstVitualFuncInB);    // 取虚函数表的首地址所指内容,取第一个虚函数地址
+    ASSERT_EQ(10, pFun1());                             // 调用第一个虚函数CBase::f1()
 
-    PFun pFun2 = (PFun)*(pAddrOfFirstVitualFuncInB+1); // 虚函数表首地址加1,得到下一个虚函数地址
-    ASSERT_EQ(20, pFun2()); // 调用第一个虚函数CBase::f2()
+    PFun pFun2 = (PFun)*(pAddrOfFirstVitualFuncInB+1);  // 虚函数表首地址加1,得到下一个虚函数地址
+    ASSERT_EQ(20, pFun2());                             // 调用第一个虚函数CBase::f2()
 
-    PFun pFun3 = (PFun)*(pAddrOfFirstVitualFuncInB+2); // 虚函数表首地址加2,得到下下一个虚函数地址
-    ASSERT_EQ(30, pFun3()); // 调用第一个虚函数CBase::f3()
+    PFun pFun3 = (PFun)*(pAddrOfFirstVitualFuncInB+2);  // 虚函数表首地址加2,得到下下一个虚函数地址
+    ASSERT_EQ(30, pFun3());                             // 调用第一个虚函数CBase::f3()
 }
