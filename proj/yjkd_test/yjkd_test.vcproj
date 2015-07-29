@@ -230,6 +230,14 @@
 				RelativePath="..\..\include\utils\singleton.h"
 				>
 			</File>
+			<Filter
+				Name="gdi"
+				>
+				<File
+					RelativePath="..\..\include\gdi\photo_compress.h"
+					>
+				</File>
+			</Filter>
 		</Filter>
 		<Filter
 			Name="demo"
